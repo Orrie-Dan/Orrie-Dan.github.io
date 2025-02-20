@@ -6,3 +6,4 @@ function toggleMenu() {
         console.error("Menu not found! Check your class names.");
     }
 }
+
