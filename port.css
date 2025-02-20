@@ -1,0 +1,238 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url("https://designnotes.blog.gov.uk/wp-content/uploads/sites/53/2020/06/Portfolio-Desk.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:  center bottom  ;
+    font-style: italic;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1%;
+    padding-right: 60px;
+    text-align: center;
+    transition: top 0.3s ease-in-out; /* Smooth animation */
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+
+    text-decoration: none;
+    font-weight: bold;
+}
+.burger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.menu{
+    display: flex;
+    gap: 3%;
+    list-style: none;
+
+    justify-content: center;
+}
+    /* Section Styling */
+
+    section {
+        padding: 30px;
+    }
+
+    /* Skills List */
+
+    ul {
+        list-style: initial;
+    }
+/* List styling*/
+    ul li {
+        margin: 5px 0;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 12);
+        font-family: 'Poppins', sans-serif;
+        padding: 12px;
+        text-wrap: wrap;
+        font-weight: bold;
+
+    }
+    /* used this to align in the center for better visuals */
+#About,#Projects,#Home {
+    h2 {
+        text-align: center;
+    }
+}
+
+    /* Footer */
+
+    footer {
+
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+        /* Hide normal menu on small screens */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.9);
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+                margin-right: 20px;
+                margin-left: 10px;
+            }
+            .menu li {
+                padding: 10px 0;
+            }
+            /* Show menu when active */
+            .menu.menu-active {
+                display: flex !important;
+            }
+
+
+            .menu li {
+                padding: 10px 0;
+            }
+
+            .menu a {
+
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            /* Show burger icon */
+            .burger {
+                display: block;
+                cursor: pointer;
+                font-size: 30px;
+
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        }
+
+
+
+        header nav ul {
+            display: none;
+            text-align: center;
+
+            header {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+        header nav ul li {
+            display: block;
+            margin: 10px 0;
+
+
+    }
+
+
+
+@media (max-width: 480px) {
+    header{
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+
+    }
+
+}
+h1{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 350%;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* styling my paragraphs */
+p{
+    font-size: 16px;
+    padding: 20px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 10, 35);
+}
+h3{
+    font-size: 1.5em;
+    padding: 10px;
+    font-style: italic;
+    color: beige;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2{
+    font-size: 3em;
+    padding: 10px;
+    font-style: normal;
+    color: beige;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.p{
+    width: 5%;
+    height: 1%;
+
+
+
+}
+.T{
+        font-size: 16px;
+        padding: 10px;
+        font-style: normal;
+        display: flex;
+        flex-wrap: wrap;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(10, 0, 0, 0.5);
+    }
+a{
+    text-decoration: none;
+    color: white;
+}
+
