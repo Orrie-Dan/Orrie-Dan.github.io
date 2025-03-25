@@ -1,9 +1,25 @@
-function toggleMenu() {
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerButton = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
-    if (menu) {
-        menu.classList.toggle('menu-active');
-    } else {
-        console.error("Menu not found! Check your class names.");
-    }
-}
 
+
+    burgerButton.addEventListener('click', toggleMenu);
+
+
+    document.addEventListener('click', (event) => {
+        if (!menu.contains(event.target) && !burgerButton.contains(event.target)) {
+            menu.classList.remove('menu-active');
+        }
+    });
+
+
+    menu.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            menu.classList.remove('menu-active');
+        }
+    });
+
+    function toggleMenu() {
+        menu.classList.toggle('menu-active');
+    }
+});
