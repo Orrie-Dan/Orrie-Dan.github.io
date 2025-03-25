@@ -2,89 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Nkusi - Portfolio</title>
     <link href="port.css" rel="stylesheet">
-    <link href="index.js" rel="javascript">
-    <h1>Dan's Portfolio</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-
-    <nav >
+    <nav>
+        <h1>Dan's Portfolio</h1>
+        <button class="burger" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#About" >About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Experience">Experience</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="burger" onclick="toggleMenu()">☰
-        </button>
     </nav>
 </header>
-<section id="Home">
-<h2>Welcome to my portfolio</h2>
-<p>This is the first website I've built, So I will ask you to kindly bear with me :)</p>
-</section>
 
-<section id="About">
-    <h2>About Me</h2>
-    <p>My names are Nkusi Orrie Dan I'm a 20-year-old from Rwanda who recently graduated from high school in 2023.<br> During my studies,I focused on subjects that I’m passionate about—Math, Physics, and Computer Science.<br> Computer science sparked my curiosity and shaped my interest in exploring how the world works and how technology can help solve complex problems.<br> I decided to take Software engineering as a major because the idea of creating something that could help make a positive change in the community fuels me. </p>
+<main>
+    <section id="home">
+        <div class="section-content">
+            <h2>Welcome to my Portfolio</h2>
+            <p>This is my first website, and I'm excited to showcase my journey in technology and learning.</p>
+        </div>
+    </section>
 
-</section>
-<section id="Skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>SQL</li>
-    </ul>
-</section>
-<section id="Education">
-    <h2>Education</h2>
-    <ul>
-    <li>Primary School: École Privée Marie Auxiliatrice(2010-2016)</li>
-    <li>Secondary School:IFAK(2017-2019), SIHS(2020-2023)</li>
-    <li>University:ALU(2024-Present)</li>
-    </ul>
-</section>
-<section id="Experience">
-    <h2>Experience</h2>
-    <ul>
-        <li>Esri Rwanda (Jan/2025-Present): IT Intern</li>
-    </ul>
-</section>
-<section id="Projects">
-    <h2>Projects</h2>
-    <article>
-        <h3>Currency converter</h3>
-        <p class="T">In this project, I wrote a program that converts a provided currency to another. In addition,it improved my programming skills with JavaScript and got more comfortable using it!.</p>
-    </article>
-    <article>
-        <h3>Virtual coffee maker</h3>
-        <p class="T">In this project, I worked on a coffee machine simulator. This machine uses regular ingredients — coffee, milk, and plastic cups.Should it run out of something, it will show you a notification.</p>
-    </article>
-    <article>
-        <h3>Course Progress Tracker Application</h3>
-        <p class="T">In this project, I built a Python application that helps students understand how their assignments contribute to their final course grades.<br> The application categorized assignments into Formative and Summative groups, calculate scores based on assigned weights, and provide a clear indication of whether the student has passed or needs to retake the course.</p>
-    </article>
-</section>
-<section id="Contact">
-    <h2>Contacts </h2>
-    <ul>
-        <li><p><a href="#Contact">Email: d.nkusi@alustudent.com</a></p></li>
-       <li><p>Tel: <a href="tel:+250793083537">+250 793 083 537</a></p></li>
-        <li><p><a href="https://github.com/Orrie-Dan" target="_blank" rel="noopener noreferrer">Github: Orrie-Dan </a></p></li>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm Nkusi Orrie Dan, a 20-year-old from Rwanda who recently graduated from high school in 2023. During my studies, I focused on subjects I'm passionate about—Math, Physics, and Computer Science. Computer science sparked my curiosity and shaped my interest in exploring how the world works and how technology can help solve complex problems.</p>
+        </div>
+    </section>
 
-    </ul>
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
 
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <ul>
+                <li>Primary School: École Privée Marie Auxiliatrice (2010-2016)</li>
+                <li>Secondary School: IFAK (2017-2019), SIHS (2020-2023)</li>
+                <li>University: ALU (2024-Present)</li>
+            </ul>
+        </div>
+    </section>
 
-</section>
-</body>
+    <section id="experience">
+        <div class="section-content">
+            <h2>Experience</h2>
+            <ul>
+                <li>Esri Rwanda (Jan 2025-Present): IT Intern</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article>
+                    <h3>Currency Converter</h3>
+                    <p>Developed a program that converts currencies, improving my JavaScript programming skills and gaining practical experience.</p>
+                </article>
+                <article>
+                    <h3>Virtual Coffee Maker</h3>
+                    <p>Created a coffee machine simulator that tracks ingredients like coffee, milk, and plastic cups, with notifications for low supplies.</p>
+                </article>
+                <article>
+                    <h3>Course Progress Tracker</h3>
+                    <p>Built a Python application to help students track assignment contributions to final course grades, categorizing assignments and calculating weighted scores.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:d.nkusi@alustudent.com">d.nkusi@alustudent.com</a></li>
+                <li>Tel: <a href="tel:+250793083537">+250 793 083 537</a></li>
+                <li>GitHub: <a href="https://github.com/Orrie-Dan" target="_blank" rel="noopener noreferrer">Orrie-Dan</a></li>
+            </ul>
+        </div>
+    </section>
+</main>
+
 <footer>
-    <p>© 2025 Orrie Dan. All rights reserved. </p>
+    <p>&copy; 2025 Orrie Dan. All rights reserved.</p>
 </footer>
+
+<script src="index.js"></script>
+</body>
 </html>
