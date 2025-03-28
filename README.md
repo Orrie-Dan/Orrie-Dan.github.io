@@ -1,6 +1,5 @@
-Portfolio Website Improvement Guide
-Overview
-This project involves a comprehensive redesign and improvement of a personal portfolio website, focusing on enhanced responsiveness, accessibility, and professional design.
+**Portfolio Website Overview**
+This project involves a comprehensive redesign and improvement of  personal portfolio website, focusing on enhanced responsiveness, accessibility, and professional design.
 Key Improvements
 1. HTML Structure
 2. JavaScript Enhancements
@@ -44,7 +43,7 @@ Author
 Nkusi Orrie Dan
 
 Email: d.nkusi@alustudent.com
-GitHub: Orrie-Dan
+
 
 License
 © 2025 Orrie Dan. All rights reserved.
